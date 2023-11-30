@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
+
 
 //형식 선언 
 struct student{
 		int ID;        //학번 
-		char name;     //이름 
+		char name[100];     //이름 
 		float score;   //학점 
 		
 	};
@@ -13,7 +13,7 @@ struct student{
 
 int main(int argc, char *argv[]) 
 {
-	struct student s1 = {123,"hyerynn", 4.3}; // instance 선언 
+	struct student s1 = {123,"hyerynn", 4.3}; // 초기화 instance 선언 
 	
 	//다른값 변경
  	s1.ID = 123456;
@@ -25,7 +25,7 @@ int main(int argc, char *argv[])
 	printf("grade : %f\n", s1.score);
 	
 	strcpy(s1.name, "jetto");
-	printf("grade : %f\n" ,s1.score);
+	printf("name2 : %s\n");
 	
 	system("PAUSE");
 	return 0;
