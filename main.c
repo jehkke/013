@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+#include <string.h>
 
 //형식 선언 
 struct student{
@@ -25,7 +25,7 @@ int main(int argc, char *argv[])
 	printf("grade : %f\n", s1.score);
 	
 	strcpy(s1.name, "jetto");
-	printf("name2 : %s\n");
+	printf("name2 : %s\n", s1.name);
 	
 	system("PAUSE");
 	return 0;
